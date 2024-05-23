@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
             case 1: // CAT
                 productVariations.push("Gray", "Orange", "Black");
                 break;
-            case 1: // DRAGON HEAD
+            case 3: // DRAGON HEAD
                 productVariations.push("Night Fury (Toothless)", "Light Fury");
                 break;
             case 4: // DUCK
