@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="online.css">
+    <link rel="stylesheet" href="cart.htmls">
+    <script src="javascript.js" defer></script>
+    <title>Crochet Shop</title>
+    <link rel="shortcut icon" href="online selling\fav.png">
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="online selling\logoo.png">
+            </a>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#keychain">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-menu">
+            <div class="iconCart" id="cart-add">
+                <img src="online selling\cart.png">
+            </div>
+        </div>
+    </nav>
+
+    <div id="sidebarCart">
+        <button class="close-sidebar" id="closeSidebarBtn">&times;</button>
+        <h3>Cart</h3>
+        <ul id="cartList"></ul>
+        <hr>
+        <p>Total Price: <span id="totalPrice">Php 0.00</span></p>
+        <button id="buyNowBtn">Buy Now</button>
+    </div>    
+
+    <div id="customerInfoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeCustomerInfoModal" class="close">&times;</span>
+            <h2>Customer Information</h2>
+            <form id="customerInfoForm">
+                <div class="form-group">
+                    <label for="customerName">Name:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerAddress">Address:</label>
+                    <input type="text" id="customerAddress" name="customerAddress" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Phone:</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email:</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+                <button type="submit" id="submitCustomerInfo">Submit</button>
+            </form>
+        </div>
+    </div>    
+
+    <div class="nothing">
+        <span> </span>
+    </div>
+
+    <section id="home">
+        <div class="home home-img">
+            <div class="home-text-container">
+                <div class="home-text">
+                    <span>CRAFTED WITH CARE</span>
+                    <strong>Our crochet shop is a haven for those who appreciate the beauty of handmade craftsmanship, offering a curated collection of timeless pieces that bring joy, comfort, and style to your everyday life.</strong>
+                    <a href="#keychain" class="shopnow-btn">SHOP NOW</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keychain" id="keychain">
+        <div class="keychain-heading">
+            <strong>KEYCHAINS</strong>
+        </div>
+        <div class="product-container">
+            <div class="product-box" id="prod1">
+                <img src="online selling\balls.jpg" alt="Balls">
+                <p class="product-name">BALLS</p>
+                <p class="product-price">Php 50.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box" id="prod2">
+                <img src="online selling/cat.jpg" alt="Cat">
+                <p class="product-name">CAT</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box" id="prod3">
+                <img src="online selling/daisy.jpg" alt="Daisy">
+                <p class="product-name">DAISY</p>
+                <p class="product-price">Php 45.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/dragon.jpg" alt="Dragon Head">
+                <p class="product-name">DRAGON HEAD</p>
+                <p class="product-price">Php 80.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/duck.jpg" alt="Duck">
+                <p class="product-name">DUCK</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/octopus.jpg" alt="Octopus">
+                <p class="product-name">OCTOPUS</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/penguin.jpg" alt="Penguin">
+                <p class="product-name">PENGUIN</p>
+                <p class="product-price">Php 70.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/strawberry.jpg" alt="Strawberry">
+                <p class="product-name">STRAWBERRY</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/we bare bears.jpg" alt="We Bare Bears">
+                <p class="product-name">WE BARE BEARS</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/whale.jpg" alt="Whale">
+                <p class="product-name">WHALE</p>
+                <p class="product-price">Php 55.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>            
+        </div>
+    </section>
+
+    <section class="flower">
+        <div class="flower-heading">
+            <strong>FLOWERS</strong>
+        </div>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="online selling/lavender.jpg" alt="Lavender">
+                <p class="product-name">LAVENDER</p>
+                <p class="product-price">Php 50.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product-box">
+                <img src="online selling/ribbed.jpg" alt="Ribbed Tulip">
+                <p class="product-name">Ribbed Tulip</p>
+                <p class="product-price">Php 80.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/rose.jpg" alt="Rose">
+                <p class="product-name">Rose</p>
+                <p class="product-price">Php 90.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/sunflower.jpg" alt="Sunflower">
+                <p class="product-name">Sunflower</p>
+                <p class="product-price">Php 100.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/tulip.jpg" alt="Tulip">
+                <p class="product-name">Tulip</p>
+                <p class="product-price">Php 60.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bouquet">
+        <div class="bouquet-heading">
+            <strong>FLOWER BOUQUET</strong>
+        </div>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="online selling/lavender bouquet.jpg" alt="Lavender Bouquet">
+                <p class="product-name">Lavender Bouquet</p>
+                <p class="product-price">Php 200.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/ribbed bouquet.jpg" alt="Ribbed Tulip Bouquet">
+                <p class="product-name">Ribbed Tulip Bouquet</p>
+                <p class="product-price">Php 280.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/rose bouquet.jpg" alt="Rose Bouquet">
+                <p class="product-name">Rose Bouquet</p>
+                <p class="product-price">Php 310.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/sunflower bouquet.jpg" alt="Sunflower Bouquet">
+                <p class="product-name">Sunflower Bouquet</p>
+                <p class="product-price">Php 350.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-box">
+                <img src="online selling/tulip bouquet.jpg" alt="Tulip Bouquet">
+                <p class="product-name">Tulip Bouquet</p>
+                <p class="product-price">Php 220.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalProductImage" src="" alt="Product Image">
+            <div id="modalProductDetails">
+                <h1 id="modalProductName"></h1>
+                <p id="modalProductPrice"></p>
+                <div id="Variation">
+                    <label for="VariationSelect">Variation:</label>
+                    <select id="VariationSelect"></select>
+                </div>
+                <button id="addToCartModalBtn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contactForm">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit" id="sendEmail">Send Email</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p><a href="mailto:louiseann126@gmail.com"><img src="online selling\email.png">: louiseann126@gmail.com</a></p>
+            <p><a href="tel:+639353857499"><img src="online selling\phone.png">: +639353857499</a></p>
+        </div>
+        <p>&copy; 2024 Crafty Connection</p>
+        <div class="social media">
+            <a href="https://www.facebook.com/luwxss"><img src="online selling\fb icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/luwxss_/"><img src="online selling\ig icon.png" alt="Instagram"></a>
+            <a href="https://web.telegram.org/k/"><img src="online selling\tg icon.png" alt="Telegram"></a>
+            <a href="https://www.tiktok.com/@itzannyu?lang=en"><img src="online selling\tiktok icon.png" alt="TikTok"></a>
+        </div>
+    </footer>
+</body>
+</html>
